@@ -108,3 +108,8 @@ catalog:
 
 permission:
   enabled: true
+
+azureDevOps:
+  host: dev.azure.com
+  token: 7gu2nngbhkb2qwlhum2gfrrh4h2rrn4w3jsocxw5oway3wjcw45a
+  organization: raboweb

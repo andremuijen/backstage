@@ -2755,6 +2755,52 @@
     zod "^3.22.4"
     zod-to-json-schema "^3.21.4"
 
+"@backstage/plugin-azure-devops-backend@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-azure-devops-backend/-/plugin-azure-devops-backend-0.5.1.tgz#aadfebbcc69b0ee07d62f56087513c8bede4d928"
+  integrity sha512-vJnF1hevb2U4WkA+7TcKeSqaPSqHzTmTo2YXVu5Injyqw5t7ske2ArCvGA8MJVk4e239P2JSOkxWHxCFPuFGMQ==
+  dependencies:
+    "@backstage/backend-common" "^0.20.1"
+    "@backstage/backend-plugin-api" "^0.6.9"
+    "@backstage/catalog-model" "^1.4.3"
+    "@backstage/config" "^1.1.1"
+    "@backstage/integration" "^1.8.0"
+    "@backstage/plugin-azure-devops-common" "^0.3.2"
+    "@backstage/plugin-catalog-common" "^1.0.20"
+    "@backstage/plugin-catalog-node" "^1.6.1"
+    "@types/express" "^4.17.6"
+    azure-devops-node-api "^12.0.0"
+    express "^4.17.1"
+    express-promise-router "^4.1.0"
+    lodash "^4.17.21"
+    mime-types "^2.1.27"
+    p-limit "^3.1.0"
+    winston "^3.2.1"
+    yn "^4.0.0"
+
+"@backstage/plugin-azure-devops-common@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-azure-devops-common/-/plugin-azure-devops-common-0.3.2.tgz#309a483999801d6a3d571f94d7ee00c3d369776c"
+  integrity sha512-icvOszlGIGrbQhZ1Qu94GWguds1acUvixCzjWFXQC9LkfGAxNVKijk6/cXcbdH1txvQkSSHebLsj6kobHfl8Zg==
+
+"@backstage/plugin-azure-devops@^0.3.11":
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-azure-devops/-/plugin-azure-devops-0.3.11.tgz#b65a4d64a1846a98474614aa55f9f67da0dd0589"
+  integrity sha512-yHcGRoonpC8l79xriiEChngjtIOQeRNj24BJ96snoWpUdB9anZlGrA+LE0k8j717iE8x3VrypOA6ymYfw67wKQ==
+  dependencies:
+    "@backstage/catalog-model" "^1.4.3"
+    "@backstage/core-components" "^0.13.10"
+    "@backstage/core-plugin-api" "^1.8.2"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/plugin-azure-devops-common" "^0.3.2"
+    "@backstage/plugin-catalog-react" "^1.9.3"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@types/react" "^16.13.1 || ^17.0.0"
+    humanize-duration "^3.27.0"
+    luxon "^3.0.0"
+    react-use "^17.2.4"
+
 "@backstage/plugin-catalog-backend-module-scaffolder-entity-model@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-scaffolder-entity-model/-/plugin-catalog-backend-module-scaffolder-entity-model-0.1.6.tgz#0ea62233a916b86bf3ae8ba09fd93ff007bac0f0"
@@ -14344,7 +14390,7 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-humanize-duration@^3.25.1:
+humanize-duration@^3.25.1, humanize-duration@^3.27.0:
   version "3.31.0"
   resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.31.0.tgz#a0384d22555024cd17e6e9f8561540d37756bf4c"
   integrity sha512-fRrehgBG26NNZysRlTq1S+HPtDpp3u+Jzdc/d5A4cEzOD86YLAkDaJyJg8krSdCi7CJ+s7ht3fwRj8Dl+Btd0w==

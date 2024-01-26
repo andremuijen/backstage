@@ -33,6 +33,7 @@ import { ServerPermissionClient } from '@backstage/plugin-permission-node';
 import { DefaultIdentityClient } from '@backstage/plugin-auth-node';
 import todoList from './plugins/todolist';
 import permission from './plugins/permission';
+import azureDevOps from './plugins/azure-devops';
 
 function makeCreateEnv(config: Config) {
   const root = getRootLogger();
@@ -89,6 +90,7 @@ async function main() {
   const appEnv = useHotMemoize(module, () => createEnv('app'));
   const todoListEnv = useHotMemoize(module, () => createEnv('todolist'));
   const permissionEnv = useHotMemoize(module, () => createEnv('permission'));
+  const azureDevOpsEnv = useHotMemoize(module, () => createEnv('azure-devops'));
 
   const apiRouter = Router();
   apiRouter.use('/catalog', await catalog(catalogEnv));
@@ -99,6 +101,7 @@ async function main() {
   apiRouter.use('/search', await search(searchEnv));
   apiRouter.use('/todolist', await todoList(todoListEnv));
   apiRouter.use('/permission', await permission(permissionEnv));
+  apiRouter.use('/azure-devops', await azureDevOps(azureDevOpsEnv));
 
   // Add backends ABOVE this line; this 404 handler is the catch-all fallback
   apiRouter.use(notFoundHandler());
