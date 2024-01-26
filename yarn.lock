@@ -2801,6 +2801,22 @@
     luxon "^3.0.0"
     react-use "^17.2.4"
 
+"@backstage/plugin-catalog-backend-module-azure@^0.1.28":
+  version "0.1.28"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-azure/-/plugin-catalog-backend-module-azure-0.1.28.tgz#d026e8500d43fd67384fdf8f0cb65ace4887c7f4"
+  integrity sha512-VH1grvzqpq5EA0pxOU9oy5Oj+n7YWeckjiTNMipk6dLPY9zA/rOyezn4SCV5ZMbKpKlZqHcg7pwbUdiAuGDdmw==
+  dependencies:
+    "@backstage/backend-common" "^0.20.1"
+    "@backstage/backend-plugin-api" "^0.6.9"
+    "@backstage/backend-tasks" "^0.5.14"
+    "@backstage/config" "^1.1.1"
+    "@backstage/integration" "^1.8.0"
+    "@backstage/plugin-catalog-common" "^1.0.20"
+    "@backstage/plugin-catalog-node" "^1.6.1"
+    node-fetch "^2.6.7"
+    uuid "^8.0.0"
+    winston "^3.2.1"
+
 "@backstage/plugin-catalog-backend-module-scaffolder-entity-model@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-scaffolder-entity-model/-/plugin-catalog-backend-module-scaffolder-entity-model-0.1.6.tgz#0ea62233a916b86bf3ae8ba09fd93ff007bac0f0"
@@ -9332,6 +9348,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/core-plugin-api" "^1.8.2"
     "@backstage/integration-react" "^1.1.23"
     "@backstage/plugin-api-docs" "^0.10.3"
+    "@backstage/plugin-azure-devops" "^0.3.11"
     "@backstage/plugin-catalog" "^1.16.1"
     "@backstage/plugin-catalog-common" "^1.0.20"
     "@backstage/plugin-catalog-graph" "^0.3.3"

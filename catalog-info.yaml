@@ -8,8 +8,8 @@ metadata:
   #   github.com/project-slug: backstage/backstage
   #   backstage.io/techdocs-ref: dir:.
   annotations:
-    dev.azure.com/project-repo: Backstage/EngineersHub
+    dev.azure.com/project-repo: backstage/*
 spec:
-  type: website
+  type: service
   owner: john@example.com
   lifecycle: experimental

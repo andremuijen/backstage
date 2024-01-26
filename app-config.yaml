@@ -36,6 +36,8 @@ backend:
     keys:
       - secret: rMLMO+xUk+wpDH61aP0h2rnJXEJ1hY0Z
 
+
+
 integrations:
   github:
     - host: github.com
@@ -46,6 +48,17 @@ integrations:
     # - host: ghe.example.net
     #   apiBaseUrl: https://ghe.example.net/api/v3
     #   token: ${GHE_TOKEN}
+
+#  azureDevOps:
+#    host: dev.azure.com
+#    token: N2d1Mm5uZ2Joa2IycXdsaHVtMmdmcnJoNGgycnJuNHczanNvY3h3NW93YXkzd2pjdzQ1YQ==
+#    organization: raboweb
+#
+
+  azure:
+    - host: dev.azure.com
+      credentials:
+        - personalAccessToken: "N2d1Mm5uZ2Joa2IycXdsaHVtMmdmcnJoNGgycnJuNHczanNvY3h3NW93YXkzd2pjdzQ1YQ=="
 
 proxy:
   ### Example for how to add a proxy endpoint for the frontend.
@@ -105,11 +118,24 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+  providers:
+    azureDevOps:
+      yourProviderId:
+        organization: raboweb
+        project: 'backstage'
+        repository: 'engineersHub' # this will match all repos starting with service-*
+        path: /examples/entities.yaml
+        schedule: # optional; same options as in TaskScheduleDefinition
+          # supports cron, ISO duration, "human duration" as used in code
+          frequency: { minutes: 30 }
+          # supports ISO duration, "human duration" as used in code
+          timeout: { minutes: 3 }
 
 permission:
   enabled: true
 
 azureDevOps:
   host: dev.azure.com
-  token: 7gu2nngbhkb2qwlhum2gfrrh4h2rrn4w3jsocxw5oway3wjcw45a
+  token: "N2d1Mm5uZ2Joa2IycXdsaHVtMmdmcnJoNGgycnJuNHczanNvY3h3NW93YXkzd2pjdzQ1YQ=="
   organization: raboweb
+
