@@ -32,6 +32,10 @@ backend:
     connection: ':memory:'
   # workingDirectory: /tmp # Use this to configure a working directory for the scaffolder, defaults to the OS temp-dir
 
+  auth:
+    keys:
+      - secret: rMLMO+xUk+wpDH61aP0h2rnJXEJ1hY0Z
+
 integrations:
   github:
     - host: github.com
@@ -101,3 +105,6 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+
+permission:
+  enabled: true
